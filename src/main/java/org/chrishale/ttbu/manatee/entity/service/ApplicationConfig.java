@@ -24,6 +24,8 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(org.chrishale.ttbu.manatee.entity.service.MenteeFacadeREST.class);
+        resources.add(org.chrishale.ttbu.manatee.entity.service.MentorFacadeREST.class);
         resources.add(org.chrishale.ttbu.manatee.entity.service.PersonFacadeREST.class);
     }
     
